@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hack Smith 2018</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+  <style type="text/css">
+  .container {
+    width: 50%;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .iphone {
+    transform: translate(0px, 50px);
+  }
+ /* .iphone:hover {
+    transform: translate(0px, 50px);
+    transition-duration: 1s;
+  }*/
+  .base {
+    width: 30%;
+    min-width: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .iphone .common {
+    background-color: #fff;
+    border: 4px solid #45505B;
+    margin-top: -4px;
+  }
+  .iphone .metal {
+    width: 40px;
+    height: 40px;
+    background-color: #DADCDF;
+    border: 4px solid #45505B;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .iphone .metal:after {
+    content: " ";
+    display: block;
+    background-color: #fff;
+    border: 2px solid #A3A9AE;
+    width: 20px;
+    height: 8px;
+    margin: 5px auto 0;
+  }
+  .iphone .face {
+    width: 55px;
+    height: 80px;
+    border-radius: 8px;
+    position: relative;
+  }
+  .iphone .holder {
+    width: 30px;
+    height: 40px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .iphone .cord {
+    width: 20px;
+    height: 125px;
+    border-bottom: none;
+  }
+
+/* SHAPES */
+  .shape {
+  height: 150px;
+  width: 150px;
+  background-color: #C25B56;
+  border-radius: 80px;
+  margin-bottom: 30px;
+  float: left;
+  margin-right: 20px;
+  border: 4px solid #45505B;
+  }
+
+  .shape2 {
+    border-radius: 30px;
+  }
+
+  .shape3 {
+    border-radius: 5px;
+  }
+
+  body, html {
+    height: 100%;
+  }
+
+  body {
+    background-color: #96C0CE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .centerpiece {
+    clear: both;
+    align-items: center;
+    text-align: center;
+    margin-top: -75px;
+  }
+
+  .centerpiece h1 {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 100px;
+    font-weight: normal;
+    margin: 20px;
+  }
+
+  .centerpiece .date {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px; 
+    /*font-weight: bold;*/
+  }
+
+  @media screen and (max-width: 480px) {
+  .centerpiece h1 {
+      font-size: 60px;
+    }
+
+  }
+
+
+button {
+  outline: none;
+  height: 50px;
+  text-align: center;
+  width: 175px;
+  border-radius: 40px;
+  background: #fff;
+  border: 4px solid #45505B;
+  color: #e27979;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: #e27979;
+}
+button:active {
+  letter-spacing: 2px;
+}
+button:after {
+  content: "REGISTER";
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="centerpiece">
+    <h1>Hack Smith</h1>
+    <div class="date">&lt; April 7-8th, 2018 /&gt;</div>
+    <a href="https://hacksmith.typeform.com/to/nQqiBY">
+      <button id="button"></button>
+    </a>
+
+
+  <div class="container">
+    <div class="iphone base">
+      <div class="metal"></div>
+      <div class="face common">
+      </div>
+      <div class="holder common"></div>
+      <div class="cord common"></div>
+    </div>
+  </div>
+</body>
+</html>
