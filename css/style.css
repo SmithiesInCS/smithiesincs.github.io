@@ -9,7 +9,7 @@ body {
 
 p {
   font-size: 18px;
-  line-height: 2;
+  /*line-height: 2;*/
 }
 
 .container {
@@ -279,7 +279,7 @@ p.desc {
 
 /* ---------FAQ--------- */
 #FAQ {
-  min-height: 140vh;
+  min-height: 100vh;
   background: #9dbfcc;
 }
 
@@ -287,20 +287,21 @@ p.desc {
   display: grid;
   grid-row-gap: 10px;
   grid-template-columns: auto auto auto;
-  /*padding: 5px;*/
   justify-content: center;
 }
 .grid-item {
   width: 100%;
   padding: 0% 10%;
-  /*text-align: left;*/
-  /*font-size: 30px;*/
+}
+
+.grid-item p,h2 {
+  padding: 0% 10%;
 }
 
 /* ---------Sponsors--------- */
 #sponsors {
   background-color: white;
-  /*height: 100vh;*/
+  min-height: 100vh;
 }
 
 /* LOGOS */
