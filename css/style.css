@@ -1,390 +1,195 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
-
-body {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;;
-  /*color: rgba(0, 0, 0, 0.87);*/
-}
-
-#about p {
-  justify-content: center;
-  text-align: center;
-  margin: 50px 200px ;
-}
-
-p {
-  font-size: 18px;
-}
-
-.header {
-  width: 100%;
-  height: 100vh;
-  font-size: 50px;
-  line-height: 100px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.nav {
-  width: 100%;
-  height: 60px;
-  font-size: 20px;
-  line-height: 60px;
-  background: #45505B;
-  color: #fff;
-  position: relative;
-  margin-bottom: -60px;
-  z-index: 3;
-  text-transform: uppercase;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-    padding: 0px 20px;
-}
-
-li a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-}
-
-p {
-  line-height: 2;
-}
-
-section {
-  justify-content: center;
-  flex-align: center;
-  align-items: center;
-}
-
-#mainpage {
-  background-color: #96C0CE;
-  height: 100vh;
-}
-
-#about {
-  background-color: #e27979;
-  height: 100vh;
-}
-
-.droplet {
-  background: skyblue;
-  border-radius: 5px 50%;
-  height: 100px;
-  margin: 150px auto;
-  transform-origin: left top;
-  transition: transform 3s;
-  width: 100px;
-}
-
-#FAQ {
-  height: 140vh;
-  background: #9dbfcc;
-}
-
-#sponsors {
-  background-color: white;
-  height: 100vh;
-}
-
-.container {
-  padding: 5%;
-  /*display: flex;*/
-  flex-direction: row;
-  justify-content: center;
-}
-
-.centerpiece {
-  clear: both;
-  align-items: center;
-  text-align: center;
-  padding-top: 15%;
-}
-
-.centerpiece h1 {
-  font-family: 'Libre Barcode 39 Text', cursive;
-  font-size: 150px;
-  font-weight: normal;
-  margin: 20px;
-}
-
-.centerpiece .date {
-  font-family: 'Quicksand', sans-serif;
-  margin-top: 3%;
-  font-size: 40px; 
-}
-
-#register {
-  outline: none;
-  height: 50px;
-  text-align: center;
-  width: 175px;
-  border-radius: 40px;
-  background: #fff;
-  border: 4px solid #45505B;
-  color: #e27979;
-  margin-top: 30px;
-  letter-spacing: 1px;
-  text-shadow: 0;
-  font-size: 20px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#register:hover {
-  color: white;
-  background: #e27979;
-}
-
-#register:active {
-  letter-spacing: 2px;
-}
-
-#register:after {
-  content: "REGISTER";
-}
-
-
-.mouse_scroll {
-  display: block;
-  margin: 0 auto;
-  width: 24px;
-  height: 100px;
-  /*background: blue;*/
-  margin-top: 5%;
-}
-
-
-.m_scroll_arrows
-{
-  display: block;
-  width: 5px;
-  height: 5px;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-   
-  border-right: 2px solid #45505B;
-  border-bottom: 2px solid #45505B;
-  margin: 0 0 3px 4px;
-  
-  width: 16px;
-  height: 16px;
-}
-
-
-.unu
-{
-  margin-top: 1px;
-}
-
-.unu, .doi, .trei
-{
-    -webkit-animation: mouse-scroll 1s infinite;
-    -moz-animation: mouse-scroll 1s infinite;
-}
-
-.unu
-{
-  -webkit-animation-delay: .1s;
-  -moz-animation-delay: .1s;
-  -webkit-animation-direction: alternate;
-}
-
-.doi
-{
-  -webkit-animation-delay: .2s;
-  -moz-animation-delay: .2s;
-  -webkit-animation-direction: alternate;
-  margin-top: -6px;
-}
-
-.trei
-{
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
-  -webkit-animation-direction: alternate;
-  margin-top: -6px;
-}
-
-
-
-
-.mouse
-{
-height: 42px;
-width: 24px;
-  border-radius: 14px;
-  transform: none;
-  border: 2px solid #45505B;
-  top: 170px;
-}
-
-.wheel
-{
-  height: 5px;
-  width: 2px;
-  display: block;
-  margin: 5px auto;
-  background: #45505B;
-  position: relative;
-  
-  height: 4px;
-  width: 4px;
-  border: 2px solid #45505B;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
-  
-
-}
-
-.wheel
-{
-  -webkit-animation: mouse-wheel 0.6s linear infinite;
-  -moz-animation: mouse-wheel 0.6s linear infinite;
-}
-
-
-
-@-webkit-keyframes mouse-wheel
-{
-   0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
-
-@-moz-keyframes mouse-wheel
-{
-  0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
-}
-
-@-webkit-keyframes mouse-scroll {
-
-  0%   { opacity: 0;}
-  50%  { opacity: .5;}
-  100% { opacity: 1;}
-}
-@-moz-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
-}
-@-o-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
-}
-@keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
-}
-
-
-/*LOGOS*/
-.logo {
-  width: 15%;
-}
-
-.gold {
-  width: 35%;
-}
-
-.silver {
-  width: 30%;
-}
-
-.bronze {
-  max-height: 120px;
-  width: 25%;
-}
-
-.sponsors {
-  width: 10%;
-}
-
-
-.grid-container {
-  display: grid;
-  grid-row-gap: 10px;
-  grid-template-columns: auto auto auto;
-  /*padding: 5px;*/
-  justify-content: center;
-}
-.grid-item {
-  width: 100%;
-  padding: 0% 10%;
-  /*text-align: left;*/
-  /*font-size: 30px;*/
-}
-
-#contact {
-  background-image: url("./img/footer.png");
-  background-size: cover;
-  height: 40vh;
-}
-
-a {
-  /*text-decoration: none;*/
-  color: #e27979;
-}
-
-i {
- padding-right: 0;
- padding-left: 10px;
- color: black;
-}
-
-small {
-  padding-right: 15px;
-}
-
-small a {
-  color: black;
-  margin-right: 15px;
-}
-
-.group {
-  margin-top: 20px;
-  padding-top: 60px;
-  margin-bottom: 0px;
-}
-
-
-
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HackSmith 2018</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="./img/barcode.png">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JQuery -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  <!-- FONT AWESOME -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </style>
+</head>
+<body>
+
+  <section id="mainpage">
+    <div class="centerpiece">
+      <h1>Hack Smith</h1>
+      <div class="date">&lt; April 7-8th, 2018 /&gt;</div>
+      <button id="register"></button>
+      <div class="mouse_scroll">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+
+        <div>
+          <span class="m_scroll_arrows unu"></span>
+          <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <div class='nav'>
+
+    <ul>
+      <li><a href="#mainpage">HackSmith</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#FAQ">FAQ</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+    </ul>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <h1>Work Hard. Play Hard.</h1>
+      <img src="./img/hack.jpg" height="400px">
+      
+      <p class="desc">HackSmith is Smith's 4th annual hackathon, inviting students from all over the East Coast to spend an amazing 24 hours at Smith College building products that matter. We've been committed to a 50:50 gender ratio since Day 1, and every year we inch closer to disrupting the gender gap in tech! At HackSmith, expect great food, sleepless nights, and too much fun!</p>
+    </div>
+  </section>
+
+  <section id="FAQ">
+    <div class="container">
+      <h1>FAQs</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h2>What is a hackathon?</h2>
+          <p>A hackathon is a 24-hour event where awesome people get together to make cool apps, websites, games, gadgets, etc...</p>
+        </div>
+
+        <div class="grid-item">
+          <h2>Can I attend?</h2>
+          <p>HackSmith is open for everyone! Well, as long as you're 18 and/or a college student. We do prefer curious, innovative, and creative individuals though.</p>
+        </div>
+
+        <div class="grid-item">
+          <h2>Where should I go?</h2>
+          <p>The opening ceremony will be in the Carroll Room on the 2nd floor of the <a target="_blank" href="https://goo.gl/maps/DzESFVY2f5G2">Campus Center</a>.</p>
+        </div>  
+
+        <div class="grid-item">
+          <h2>What if I can't code...</h2>
+          <p>This is a great place to learn. We will have mentors and workshops throughout HackSmith to help you learn something new. There's a beginner track!</p>
+        </div>
+
+        <div class="grid-item">
+          <h2>What about travel reimbursement?</h2>
+          <p>Limited travel reimbursement will be provided to students who are not from the five-college area. Please indicate that you'd like travel reimbursement on your application.</p>
+        </div>
+
+        <div class="grid-item"> 
+          <h2>And teams?</h2>
+          <p>If you're in need of teammates or ideas for a hack, we will help match you during a team formation session the day of the hackathon.</p>
+        </div>  
+
+        <div class="grid-item">
+          <h2>Can I sleep overnight?</h2>
+          <p>Yes, there will be a few hosts on campus! We encourage all hackers to take care of themselves and sleeeeep.</p>
+        </div>
+
+        <div class="grid-item">
+          <h2>What should I bring?</h2>
+          <p>Your laptop, phone, chargers, ID, sleeping bags - if you would like - and most of all a great hacking spirit!</p>
+        </div>
+
+        <div class="grid-item"> 
+          <h2>Will you have hardware?</h2>
+          <p>Unfortunately this year, we don't access to MLH's hardware lab</a></p></div>  
+
+
+        <div class="grid-item">
+           <h2>Can I volunteer?</h2>
+           <p>The more, the merrier! If you're a Smithie, give us a holler.</p>
+        </div>
+
+        <div class="grid-item">
+          <h2>My question isn't here...</h2>
+          <p>Email us at <a href="mailto:scs@smith.edu" target="_blank">scs@smith.edu</a>, or send us a <a href="https://www.facebook.com/SmithiesInCS/" target="_blank">Facebook</a> message.</p>
+        </div>
+
+        <div class="grid-item">
+           <h2>Nothing to see here</h2>
+           <p>Yes, the website master is OCD. <br> Here's a <a href="https://media.giphy.com/media/13HBDT4QSTpveU/giphy.gif" target="_blank">cat</a> for your troubles.</p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <div class="container">
+      <p>This hackathon is brought to you by</p>
+      <h1>Our sponsors</h1>
+      <ul>
+        <li><img class="bronze" src="./img/google.png"></li>
+        <li><img class="bronze" src="./img/MITLL.png"></li>
+      </ul>
+      <ul>
+        <li><img class="bronze" src="./img/DEShaw.png"></li>
+        <li><img class="bronze" src="./img/massMutual.png"></li>
+        <li><img class="bronze" src="./img/clark.png"></li>
+      </ul>
+      <br><br><br>
+      <img class="sponsors" src="./img/massdigi.jpg">
+
+      <br><br><br>
+     
+      <p>and organized by</p>
+      <img class="sponsors" src="./img/scs.png">
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="group">
+      <div>
+        <a class="link" href="https://www.facebook.com/events/852721804907243/" target="_blank">
+        <i class="fa fa-3x fa-facebook" aria-hidden="true"></i></a> 
+        <a class="link" href="mailto:scs@smmith.edu" target="_blank">
+        <i class="fa fa-3x fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <small>
+       <div>Made with ♡ by <a href="http://faridasabry.com" target="_blank">Farida</a></div>
+       <div><a href="https://sophia.smith.edu/smithcs/" target="_blank">Smithies In CS</a>| &nbsp; &nbsp; copyright © 2018</div>
+      </small>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    document.getElementById("register").onclick = function () {
+        location.href = "https://hacksmith.typeform.com/to/nQqiBY";
+    };
+
+    var yourNavigation = $(".nav");
+      stickyDiv = "sticky";
+      yourHeader = $('#mainpage').height();
+
+    $(window).scroll(function() {
+      if( $(this).scrollTop() > yourHeader ) {
+        yourNavigation.addClass(stickyDiv);
+      } else {
+        yourNavigation.removeClass(stickyDiv);
+      }
+    });
+  </script>
+    
+</body>
+</html>
