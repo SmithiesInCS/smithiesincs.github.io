@@ -28,7 +28,10 @@
     <div class="centerpiece">
       <h1>Hack Smith</h1>
       <div class="date">&lt; April 7-8th, 2018 /&gt;</div>
-      <button id="register"></button>
+      <ul>
+        <li><button id="register"></button></li>
+        <li><button id="volunteer"></button></li>
+      </ul>
       <div class="mouse_scroll">
         <div class="mouse">
           <div class="wheel"></div>
@@ -51,6 +54,7 @@
       <li><a href="#mainpage">HackSmith</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#FAQ">FAQ</a></li>
+      <li><a href="http://bit.ly/hacksmithsched" target="_blank">SCHEDULE</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
     </ul>
   </div>
@@ -75,12 +79,12 @@
 
         <div class="grid-item">
           <h2>Can I attend?</h2>
-          <p>HackSmith is open for everyone! Well, as long as you're 18 and/or a college student. We do prefer curious, innovative, and creative individuals though.</p>
+          <p>HackSmith is open for everyone! Well, as long as you're 18 and/or a college student. We do encourage curious, innovative, and creative individuals to attend!</p>
         </div>
 
         <div class="grid-item">
-          <h2>Where should I go?</h2>
-          <p>The opening ceremony will be in the Carroll Room on the 2nd floor of the <a target="_blank" href="https://goo.gl/maps/DzESFVY2f5G2">Campus Center</a>.</p>
+          <h2>How do I get there?</h2>
+          <p>Please head to the <a target="_blank" href="https://goo.gl/maps/DzESFVY2f5G2">Campus Center</a> for registration. Following that, the opening ceremony will be in Weinstein Auditorium.</p>
         </div>  
 
         <div class="grid-item">
@@ -100,22 +104,22 @@
 
         <div class="grid-item">
           <h2>Can I sleep overnight?</h2>
-          <p>Yes, there will be a few hosts on campus! We encourage all hackers to take care of themselves and sleeeeep.</p>
+          <p>Yes, please fill out this <a href="">housing</a> form to be matched with a host</p>
         </div>
 
         <div class="grid-item">
           <h2>What should I bring?</h2>
-          <p>Your laptop, phone, chargers, ID, sleeping bags - if you would like - and most of all a great hacking spirit!</p>
+          <p>Your ID, laptop, phone, chargers, and -- if you'd like -- sleeping bags, but most importantly a great hacking spirit!</p>
         </div>
 
         <div class="grid-item"> 
           <h2>Will you have hardware?</h2>
-          <p>Unfortunately this year, we don't access to MLH's hardware lab</a></p></div>  
+          <p>Unfortunately this year, we don't have access to MLH's hardware lab</a></p></div>  
 
 
         <div class="grid-item">
            <h2>Can I volunteer?</h2>
-           <p>The more, the merrier! If you're a Smithie, give us a holler.</p>
+           <p>The more, the merrier! If you're a Smithie, sign up <a href="http://bit.ly/hacksmithvolunteer">here</a>. If you're able to host hackers, also sign up <a href="http://bit.ly/hacksmithhost">here</a></p>
         </div>
 
         <div class="grid-item">
@@ -138,6 +142,11 @@
     <div class="container">
       <p>This hackathon is brought to you by</p>
       <h1>Our sponsors</h1>
+      <!-- SILVER -->
+      <a href="https://github.com"><img class="silver" src="./img/github.png"></a>
+      <br><br>
+
+      <!-- BRONZE -->
       <ul>
         <li><a href="https://www.google.com"><img class="bronze" src="./img/google.png"></a></li>
         <li><a href="https://www.ll.mit.edu/"><img class="bronze" src="./img/MITLL.png"></a></li>
@@ -147,7 +156,15 @@
         <li><a href="https://www.massmutual.com/"><img class="bronze" src="./img/massMutual.png"></a></li>
         <li><a href="http://www.science.smith.edu/"><img class="bronze" src="./img/clark.png"></a></li>
       </ul>
-      <br><br><br>
+      <br><br>
+      <ul>
+        <li><a href="https://www.smith.edu/academics/conway-center"><img class="bronze" src="./img/conway.png"></a></li>
+        <li><a href="http://smithiesdesign.com/"><img class="bronze" src="./img/design.png"></a></li>
+      </ul>
+      <br>
+    
+      <!-- OTHER SPONSORS -->
+      <br><br>
       <a href="https://www.massdigi.org/"><img class="sponsors" src="./img/massdigi.jpg"></a>
 
       <br><br><br>
@@ -176,7 +193,13 @@
   <script type="text/javascript">
     document.getElementById("register").onclick = function () {
         location.href = "https://hacksmith.typeform.com/to/nQqiBY";
+        location.target = "_blank";
     };
+
+    document.getElementById("volunteer").onclick = function () {
+        location.href = "http://bit.ly/hacksmithvolunteer";
+        location.target = "_blank";
+    };  
 
     var yourNavigation = $(".nav");
       stickyDiv = "sticky";
